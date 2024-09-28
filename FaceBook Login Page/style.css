@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.lf {
+  width: 45%;
+}
+
+h1 {
+  color: #1877f2;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h3 {
+  color: #1c1e21;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.rh {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginpage {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #1877f2;
+  color: white;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #165fc0;
+}
+
+a {
+  color: #1877f2;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  display: block;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  width: 100%;
+  margin: 20px 0;
+  border: 0;
+  height: 1px;
+  background: #dddfe2;
+}
+
+.createaccount {
+  text-align: center;
+}
+
+.createaccount h2 {
+  background-color: #42b72a;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.createaccount h2:hover {
+  background-color: #36a420;
+}
+
+span {
+  color: #606770;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}

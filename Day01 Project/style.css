@@ -3,24 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   min-height: 100vh;
   background: #eee;
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: sans-serif;
 }
+
 .container {
-  width: 500px;
+  width: 400px;
   margin: auto;
   max-width: 90%;
 }
 
 .container form {
   width: 100%;
-  height: 100%;
   padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   background: white;
 }
 
@@ -30,31 +33,63 @@ body {
   color: #222;
 }
 
+.container form .form-group {
+  margin-bottom: 20px;
+}
 
-.container form .form-control{
+.container form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.container form .form-control {
+  width: 100%;
+  height: 40px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.container form .form-control:focus {
+  border-color: #27a327;
+  outline: none;
+  box-shadow: 0 0 4px rgba(39, 163, 39, 0.2);
+}
+
+.container form .btn {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 40px;
+  border: none;
+  background: #27a327;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.container form .btn:hover {
+  background-color: #219821;
+}
+
+@media (max-width: 500px) {
+  .container {
     width: 100%;
-    height: 40px;
-    background:white;
-    border-radius: 4px;
-    margin: 10px 0 18px 0;
-    padding: 0 10px; 
-}
+    padding: 10px;
+  }
 
-.container form .btn{
-    margin-left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 34px;
-    border: none;
-    background: #27a327;
-    cursor: pointer;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: white;
-    border-radius: 4px;
-    transition: .3s;
-}
+  .container form h1 {
+    font-size: 22px;
+  }
 
-.container form .btn:hover{
-    opacity: .5;
+  .container form .btn {
+    width: 100px;
+  }
 }
